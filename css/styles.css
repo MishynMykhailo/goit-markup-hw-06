@@ -81,10 +81,19 @@ position: absolute;
   background-color: #ffffff;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.2);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .icon-close-black {
   content: "";
   width: 18px;
+}
+.button-hero-sect-closed:hover,
+.button-hero-sect-closed:focus {
+fill: #2196f3;
+}
+.nodal-window {
+  border: 2px solid tomato;
 }
 /* ----------------------основные правила-------------------- */
 .container {
@@ -592,11 +601,10 @@ fill: #ffffff;
 .join-link:focus {
   background-color: #2196F3;
 }
-.footer-form {
-display: flex;
+.subscribe-form{
+  display: flex;
 }
-.subscribe-label {
-
+.subscribe-footer-form {
 display: block;
 font-style: normal;
 font-weight: 700;
@@ -608,6 +616,7 @@ color: #FFFFFF;
 margin-bottom: 20px;
 }
 .subscribe-input {
+  display: block;
  width: 358px;
   margin-right: 12px;
   border-radius: 4px;
@@ -625,7 +634,6 @@ line-height: 1.87;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
-width: 2;
 height: 50px;
 border-radius: 4px;
 background-color: #2196f3;
