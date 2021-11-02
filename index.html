@@ -66,10 +66,30 @@
 
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
-                        <div class="nodal-window">
-                            <h2>Оставьте свои данные, мы вам перезвоним</h2>
-                            <form>
-                                <input>
+                        <div class="modal-window">
+                            <h2 class=modal-title>Оставьте свои данные, мы вам перезвоним</h2>
+                            <form class=modal-form>
+                                <div class="form-field">
+                                    <label for="name-modal">Имя</label>
+                                    <input type="name" name="name" placeholder="" id="name-modal">
+                                </div>
+                                <div class="form-field">
+                                    <label for="tel-modal">Телефон</label>
+                                    <input type="tel" name="tel" placeholder="" id="tel-modal">
+                                </div>
+                                <div class="form-field">
+                                    <label for="email-modal">Почта</label>
+                                    <input type="email" name="email" placeholder="" id="email-modal">
+                                </div>
+                                <div class="form-field">
+                                    <label for="feedback-modal">Комментарии</label>
+                                    <textarea name="feedback"  placeholder="Введите текст" id="feedback-modal"></textarea>
+                                </div>
+                                <div class="privacy-field">
+                                    <input type="checkbox" name="privacy" id="privacy-modal"></input>
+                                    <label for="privacy-modal">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                                </div>
+                                <button class="btn-form-field" type="submit">Отправить</button>
                             </form>
                         </div>
                         <button type="button" class="button-hero-sect-closed" data-modal-close>

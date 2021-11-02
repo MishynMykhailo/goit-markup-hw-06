@@ -53,7 +53,8 @@ li {
   transform: translate(-50%,-50%) scale(0.9);
 }
 .modal {
-position: absolute;
+  padding: 40px 40px 40px 40px;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%) scale(1);;
@@ -64,7 +65,7 @@ position: absolute;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: #ffffff;
-  
+
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-hero-sect-closed {
@@ -92,8 +93,67 @@ position: absolute;
 .button-hero-sect-closed:focus {
 fill: #2196f3;
 }
-.nodal-window {
+.modal-window {
   border: 2px solid tomato;
+}
+.modal-title {
+
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+
+margin-bottom: 12px;
+}
+.modal-form {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%
+  
+}
+
+.form-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-field:not(:last-child) {
+  background-color: #2196F3;
+}
+.form-field input , .form-field textarea{
+  padding: 11px 12px 12px 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+.form-field label {
+margin-bottom: 4px;
+}
+.form-field textarea {
+  width: 448px;
+  height: 120px;
+  resize: none;
+}
+.btn-form-field {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 55px 10px 55px;
+  background: #188CE8;
+  color: #ffffff;
+  border: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.privacy-field {
+  display: flex;
+  align-items: center;
+}
+.privacy-field input {
+  margin-right: 7px;
 }
 /* ----------------------основные правила-------------------- */
 .container {
