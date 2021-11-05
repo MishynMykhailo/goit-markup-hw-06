@@ -206,6 +206,7 @@ li {
   color: #2196f3;
 }
 .modal-privacy-text {
+  align-self: center;
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
